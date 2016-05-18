@@ -2,9 +2,9 @@
 
 package sys
 
-const GOOS = `android`
+const GOOS = `l4ka`
 
-const GoosAndroid = 1
+const GoosAndroid = 0
 const GoosDarwin = 0
 const GoosDragonfly = 0
 const GoosFreebsd = 0
@@ -15,4 +15,4 @@ const GoosOpenbsd = 0
 const GoosPlan9 = 0
 const GoosSolaris = 0
 const GoosWindows = 0
-const GoosL4ka = 0
+const GoosL4ka = 1

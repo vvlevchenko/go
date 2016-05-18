@@ -723,6 +723,7 @@ const (
 	Hplan9
 	Hsolaris
 	Hwindows
+	Hl4ka
 )
 
 // AsmBuf is a simple buffer to assemble variable-length x86 instructions into.
