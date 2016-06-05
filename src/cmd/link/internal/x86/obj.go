@@ -114,6 +114,8 @@ func archinit() {
 	default:
 		ld.Exitf("unknown -H option: %v", ld.HEADTYPE)
 
+	case obj.Hl4ka: /* TBD */
+		break
 	case obj.Hplan9: /* plan 9 */
 		ld.HEADR = 32
 

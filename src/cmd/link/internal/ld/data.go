@@ -427,6 +427,8 @@ func relocsym(s *LSym) {
 				o = int64(Ctxt.Tlsoffset) + r.Add
 			} else if Ctxt.Headtype == obj.Hwindows {
 				o = r.Add
+			} else if Ctxt.Headtype == obj.Hl4ka {
+				log.Printf("L4KA: TBD: R_TLS_LE")
 			} else {
 				log.Fatalf("unexpected R_TLS_LE relocation for %s", Headstr(Ctxt.Headtype))
 			}

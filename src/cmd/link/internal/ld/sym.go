@@ -54,6 +54,7 @@ var headers = []struct {
 	{"solaris", obj.Hsolaris},
 	{"windows", obj.Hwindows},
 	{"windowsgui", obj.Hwindows},
+	{"l4ka", obj.Hl4ka},
 }
 
 func linknew(arch *sys.Arch) *Link {
@@ -113,7 +114,9 @@ func linknew(arch *sys.Arch) *Link {
 		} else {
 			ctxt.Tlsoffset = -1 * ctxt.Arch.PtrSize
 		}
-
+	case obj.Hl4ka:
+		/* TBD */
+		break;
 	case obj.Hnacl:
 		switch ctxt.Arch.Family {
 		default:
