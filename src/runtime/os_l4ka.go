@@ -61,3 +61,31 @@ func sigenable(sig uint32) {}
 func sigdisable(sig uint32) {}
 
 func sigignore(sig uint32) {}
+
+
+func read(fd int32, p unsafe.Pointer, n int32) int32 {
+	return 0
+}
+func closefd(fd int32) int32 {
+	return 0
+}
+
+func exit(code int32) {}
+func nanotime() int64 {
+	return 0
+}
+func usleep(usec uint32) {
+
+}
+
+func munmap(addr unsafe.Pointer, n uintptr) {}
+
+func write(fd uintptr, p unsafe.Pointer, n int32) int32 {
+	return -1
+}
+
+func open(name *byte, mode, perm int32) int32 {
+	return -1
+}
+
+func madvise(addr unsafe.Pointer, n uintptr, flags int32){}

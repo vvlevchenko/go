@@ -6,6 +6,7 @@
 // +build !solaris
 // +build !windows
 // +build !nacl
+// +build !l4ka
 
 package runtime
 
